@@ -215,21 +215,6 @@ class _ClusteringPageState extends State<ClusteringPage> {
                   borderColor: Colors.blueAccent,
                   color: Colors.black12,
                   borderStrokeWidth: 3),
-              popupOptions: PopupOptions(
-                  popupState: PopupState(),
-                  popupSnap: PopupSnap.markerTop,
-                  popupController: _popupController,
-                  popupBuilder: (_, marker) => Container(
-                        width: 200,
-                        height: 100,
-                        color: Colors.white,
-                        child: GestureDetector(
-                          onTap: () => debugPrint('Popup tap!'),
-                          child: Text(
-                            'Container popup for marker at ${marker.point}',
-                          ),
-                        ),
-                      )),
               builder: (context, markers) {
                 return Container(
                   decoration: BoxDecoration(
