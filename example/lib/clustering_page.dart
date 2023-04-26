@@ -14,8 +14,6 @@ class ClusteringPage extends StatefulWidget {
 }
 
 class _ClusteringPageState extends State<ClusteringPage> {
-  final PopupController _popupController = PopupController();
-
   late List<Marker> markers;
   late int pointIndex;
   List<LatLng> points = [
@@ -189,8 +187,6 @@ class _ClusteringPageState extends State<ClusteringPage> {
           center: points[0],
           zoom: 5,
           maxZoom: 15,
-          onTap: (_, __) => _popupController
-              .hideAllPopups(), // Hide popup when the map is tapped.
         ),
         children: <Widget>[
           TileLayer(

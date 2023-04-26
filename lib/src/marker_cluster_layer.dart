@@ -15,7 +15,6 @@ import 'package:flutter_map_marker_cluster/src/node/marker_node.dart';
 import 'package:flutter_map_marker_cluster/src/node/marker_or_cluster_node.dart';
 import 'package:flutter_map_marker_cluster/src/rotate.dart';
 import 'package:flutter_map_marker_cluster/src/translate.dart';
-import 'package:flutter_map_marker_popup/extension_api.dart';
 import 'package:latlong2/latlong.dart';
 
 class MarkerClusterLayer extends StatefulWidget {
@@ -43,7 +42,6 @@ class _MarkerClusterLayerState extends State<MarkerClusterLayer>
   late AnimationController _centerMarkerController;
   late AnimationController _spiderfyController;
   PolygonLayer? _polygon;
-  final PopupState popupState = PopupState();
 
   _MarkerClusterLayerState();
 
